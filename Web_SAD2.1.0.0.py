@@ -18,15 +18,12 @@ info = f'''{t}
 使用说明：【以下说明按添加时间先后排序】
 1.本程序仅供学习使用，不得用于商业用途;
 2.本程序最终解释权归作者所有;
-3.本程序仍在开发中，若您在使用过程中遇到了问题，请积极向作者反馈;
+3.本程序仅作为练习作品，不会频繁更新，若您在使用过程中遇到了问题，请积极向作者反馈;
 4.详细说明文档见附件readme.txt
 -----------------------------------------------------------------------
 作者说：
 本人常用的开发环境：python3.8
-本人制作的所有程序都可以在交流群免费领取(程序都在群文件里，如需源码请在群内联系群主,发送程序名称并在末尾加上“源码”二字)
-如果有人向您出售程序或者涉及到金钱交易请格外注意,那不是作者本人的意愿
-免费接受程序定制,有意者群内联系群主,发送“定制程序”和要求即可,我会回复能否制作(没回复不要急,我可能在忙)
-祝您生活愉快，万事顺心ヾ(•ω•`)o
+由于我无法稳定地与github服务器建立链接，所以有问题可以在QQ群内联系我
 -----------------------------------------------------------------------
 作者:安徽工程大学-机制231-张振伟
 QQ :2578713815
@@ -183,7 +180,6 @@ class IndexInstall(object):
         self.saved_url_path = './configuration/saved_url.json'
         self.desktop_path = self.get_desktop_path()
 
-
     def install_and_configurate(self):
         installed_record = {'installed': True}
         shortcut_path = self.desktop_path+r'\Web_SAD.lnk'
@@ -253,7 +249,7 @@ if __name__ == '__main__':
     start_ = organize_func.init_check()
     shortcut_path = install.get_desktop_path() + r'\Web_SAD.lnk'
     print(info)
-    input('>>>ENTER开始程序')
+    input('>>>ENTER开始程序.')
     if start_:
         while 1:
             os.system('cls' if os.name == 'nt' else 'clear')
